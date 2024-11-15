@@ -17,72 +17,81 @@
     <div class="circle"></div>
     <!-- Hero Section with Gradient Background -->
     <div
-      class="d-flex justify-content-center align-items-center"
-      style="height: 100vh"
-    >
-      <div id="hero" class="container col-xl-12 col-xxl-10 px-6 py-5">
-        <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-lg-7 text-center text-lg-start">
-            <h1 class="text-white display-2 fw-bold lh-1 mb-3">
-              Hello, someone.
-            </h1>
-            <p class="text-white col-lg-7 fs-4">
-              This website is the culmination of everything I have done and
-              learned as a programmer. I started programming around 8 years old
-              and have loved it since. If you're interested, contact me.
-            </p>
-          </div>
-          <div class="col-md-9 mx-auto col-lg-4">
-            <form
-              class="p-4 p-md-5 border rounded-5 bg-body-tertiar"
-              style="background-color: #ffffff"
+  class="d-flex justify-content-center align-items-center"
+  style="height: 100vh"
+>
+  <div id="hero" class="container col-xl-12 col-xxl-10 px-6 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="text-white display-2 fw-bold lh-1 mb-3">
+          Hello, someone.
+        </h1>
+        <p class="text-white col-lg-7 fs-4">
+          This website is the culmination of everything I have done and
+          learned as a programmer. I started programming around 8 years old
+          and have loved it since. If you're interested, contact me.
+        </p>
+      </div>
+      <div class="col-md-9 mx-auto col-lg-4">
+        <form
+          action="https://formspree.io/f/your-form-id"
+          method="POST"
+          class="p-4 p-md-5 border rounded-5 bg-body-tertiar"
+          style="background-color: #ffffff"
+        >
+          <!-- Email Input -->
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              name="email"
+              placeholder="name@example.com"
+              required
+            />
+            <label for="floatingInput" class="formText"
+              >Email address</label
             >
-              <!-- Email Input -->
-              <div class="form-floating mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label for="floatingInput" class="formText"
-                  >Email address</label
-                >
-              </div>
-
-              <!-- Company/Name Input -->
-              <div class="form-floating mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingCompany"
-                  placeholder="Company/Name"
-                />
-                <label for="floatingCompany" class="formText"
-                  >Company/Name</label
-                >
-              </div>
-
-              <!-- Message Input -->
-              <div class="form-floating mb-3">
-                <textarea
-                  class="form-control"
-                  placeholder="Leave a message here"
-                  id="floatingMessage"
-                  style="height: 100px"
-                ></textarea>
-                <label for="floatingMessage" class="formText">Message</label>
-              </div>
-
-              <!-- Submit Button -->
-              <button class="w-100 btn btn-lg btn-primary" type="submit">
-                Get in contact
-              </button>
-            </form>
           </div>
-        </div>
+
+          <!-- Company/Name Input -->
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingCompany"
+              name="company"
+              placeholder="Company/Name"
+              required
+            />
+            <label for="floatingCompany" class="formText"
+              >Company/Name</label
+            >
+          </div>
+
+          <!-- Message Input -->
+          <div class="form-floating mb-3">
+            <textarea
+              class="form-control"
+              name="message"
+              placeholder="Leave a message here"
+              id="floatingMessage"
+              style="height: 100px"
+              required
+            ></textarea>
+            <label for="floatingMessage" class="formText">Message</label>
+          </div>
+
+          <!-- Submit Button -->
+          <button class="w-100 btn btn-lg btn-primary" type="submit">
+            Get in contact
+          </button>
+        </form>
       </div>
     </div>
+  </div>
+</div>
+
 
     <main>
       <section class="py-5 text-center container">
@@ -214,13 +223,49 @@
       </div>
     </main>
 
+
+    <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 text">About me.</h1>
+          <p class="lead text">Hi! I'm a 15-year-old programming enthusiast from Sarajevo, 
+                          and I've been coding since I was 8. What started as curiosity 
+                          has grown into a passion for creating, solving problems, and learning new technologies. 
+                          I’m particularly interested in areas like logical functions, linear algebra, and how they 
+                          connect to programming. When I’m not coding, I enjoy playing guitar, gaming, and staying active 
+                          through regular training.
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden ">
+            <img src="./pictures/diamond.png" alt="" width="420">
+        </div>
+      </div>
+    </div>
+
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            <span class="mb-3 mb-md-0 text pe-3">2024</span>
+
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 pe-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37a4 4 0 1 1-4.68-4.68 4 4 0 0 1 4.68 4.68z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
             </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">2024/span>
+
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 pe-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.72c-2.78.61-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.92 0-1.09.39-1.98 1.02-2.68-.1-.25-.45-1.26.1-2.62 0 0 .84-.27 2.75 1.02A9.48 9.48 0 0 1 12 6.8c.85.004 1.71.11 2.52.32 1.91-1.29 2.75-1.02 2.75-1.02.55 1.36.2 2.37.1 2.62.63.7 1.02 1.59 1.02 2.68 0 3.82-2.35 4.67-4.58 4.92.36.31.68.91.68 1.84v2.72c0 .27.18.57.69.47A10.02 10.02 0 0 0 22 12c0-5.52-4.48-10-10-10z"></path>
+            </svg>
+            </a>
+
+            <a href="mailto:filetomic2008@gmail.com" style="color: #ffff; text-decoration: none;">
+              Contact Me
+            </a>
+
+            <span class="mb-3 mb-md-0 text px-3">+387 613 853 12</span>
+            
           </div>
       
         </footer>
@@ -231,5 +276,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      document.write('<a href="mailto:' + 'youremail' + '@' + 'example.com">youremail@example.com</a>');
+    </script>
+    
   </body>
 </html>
