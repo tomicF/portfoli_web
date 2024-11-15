@@ -1,0 +1,46 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.gradient-linear {
+  background: linear-gradient(to right, #5de0e6, #004aad);
+}
+.text {
+  color: white;
+}
+#input-form {
+  background-color: #176ebb;
+}
+
+.circle {
+  position: absolute; /* Positions it relative to the nearest positioned ancestor */
+  top: 50%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  width: 600px; /* Set the diameter */
+  height: 600px; /* Set the diameter */
+  border: 20px red;
+  border-radius: 50%; /* Makes it a circle */
+  transform: translate(-5%, -50%); /* Centers the circle */
+  pointer-events: none; /* Makes sure it doesn’t interfere with clicking */
+  border-style: dashed;
+  z-index: -1;
+}
+
+.bg-body-tertiar {
+  background-color: #176ebb !important; /* Set background color to #176ebb */
+}
+.border {
+  border: 0px !important;
+}
+.formText {
+  color: white;
+  font-size: 20px;
+}
+.form-control {
+  background-color: #38b6ff;
+}
+.card {
+  background-color: #176ebb;
+  color: white;
+  border: 0px;
+}
